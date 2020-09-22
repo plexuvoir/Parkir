@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="15dp">
+       <ImageView
+           android:background="#ffff"
+           android:layout_width="match_parent"
+           android:layout_height="350dp"
+           android:scaleType="centerCrop"
+           android:id="@+id/img_QR"
+           android:layout_margin="5dp"/>
+       <Button
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="Masuk"
+           android:id="@+id/btn_generate"
+           android:textSize="20sp"
+           android:textAllCaps="false"
+           android:background="#76d275"/>
+       <Button
+           android:id="@+id/btn_scan"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="Scan"
+           android:textSize="20sp"
+           android:textAllCaps="false"
+           android:background="#62efff"/>
+       <Button
+           android:id="@+id/btn_reset"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="Reset"
+           android:textSize="20sp"
+           android:textAllCaps="false"
+           android:background="#F44336"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:text="List parkir tersedia: "
+           android:textColor="#000000"
+           android:textSize="24sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/txt_slot"
+           android:padding="5dp"
+           android:textColor="#000000"
+           android:text="no items"
+           android:textSize="24sp"/>
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
